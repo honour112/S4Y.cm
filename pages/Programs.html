@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STEM for Youths</title>
+  <link rel="stylesheet" href="../styles/style.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="../assets/logo (2).png" alt="STEM for Youths Logo">
+    </div>
+    <ul class="nav-links">
+      <li><a href="home.html" >Home</a></li>
+      <li><a href="Programs.html" class="active">Programs</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="about.html" >About</a></li>
+    </ul>
+    <div class="hamburger">
+      <i class="fas fa-bars"></i>
+    </div>
+  </nav>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <span class="close-btn">&times;</span>
+    <ul>
+      <li><a href="home.html" >Home</a></li>
+      <li><a href="Programs.html">Programs</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </div>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programs - STEM for Youths</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body>
+
+  <!-- Programs Section with Carousel -->
+  <section class="programs">
+    <h2>Our Programs</h2>
+    <p class="intro">Explore our exciting programs designed for young innovators.</p>
+
+    <!-- Swiper Container -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+
+        <!-- Slide 1 -->
+        <div class="swiper-slide">
+          <div class="program-card">
+            <img src="../assets/aimg.jpg" alt="AI with Python">
+            <h3>AI with Python</h3>
+            <p>
+              Learn Python programming and dive into Artificial Intelligence. 
+              Build chatbots, image recognition models, and beginner-friendly machine learning projects.
+            </p>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="swiper-slide">
+          <div class="program-card">
+            <img src="../assets/arduino.jpg" alt="Electronics with Arduino">
+            <h3>Electronics with Arduino</h3>
+            <p>
+              Get hands-on with circuits and sensors. 
+              Build cool projects like LED controllers, mini robots, and smart devices.
+            </p>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="swiper-slide">
+          <div class="program-card">
+            <img src="../assets/math.avif" alt="Basic Mathematics">
+            <h3>Basic Mathematics</h3>
+            <p>
+              Strengthen your math skills with fun, practical examples in algebra, geometry, and statistics. 
+              Apply math to solve real-life STEM problems.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Pagination & Navigation -->
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+<footer class="footer">
+  <div class="footer-container">
+    
+    <!-- Logo & About -->
+    <div class="footer-section about">
+      <div class="footer-logo">
+        <img src="../assets/logo (2).png" alt="STEM for Youths Logo">
+      </div>
+      <h3>STEM for Youths</h3>
+      <p>Empowering Cameroonian youths through innovation, creativity, and hands-on STEM programs. Together, we build tomorrow’s leaders.</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-section links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="Programs.html">Programs</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Social Media -->
+    <div class="footer-section socials">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bottom -->
+  <div class="footer-bottom">
+    <p>© 2025 STEM for Youths </p>
+  </div>
+</footer>
+
+
+  <!-- JavaScript -->
+  <script>
+    
+    const hamburger = document.querySelector('.hamburger');
+    const sidebar = document.querySelector('.sidebar');
+    const closeBtn = document.querySelector('.close-btn');
+
+    hamburger.addEventListener('click', () => {
+      sidebar.classList.add('active');
+    });
+
+    closeBtn.addEventListener('click', () => {
+      sidebar.classList.remove('active');
+    });
+  </script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  
+  <!-- Custom JS -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      loop: true,
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+
+    </script>
+  
+
+</body>
+</html>
+

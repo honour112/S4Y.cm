@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STEM for Youths</title>
+  <link rel="stylesheet" href="../styles/style.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="../assets/logo (2).png" alt="STEM for Youths Logo">
+    </div>
+    <ul class="nav-links">
+      <li><a href="home.html" class="active">Home</a></li>
+      <li><a href="Programs.html">Programs</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+    <div class="hamburger">
+      <i class="fas fa-bars"></i>
+    </div>
+  </nav>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <span class="close-btn">&times;</span>
+    <ul>
+      <li><a href="home.html" class="active">Home</a></li>
+      <li><a href="Programs.html">Programs</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </div>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <h1>Empowering Youths For the Future</h1>
+    <p>Science. Technology. Engineering. Mathematics</p>
+    <a href="../pages/Programs.html" class="btn">Explore Programs</a>
+  </header>
+
+  <!-- Programs Section -->
+  <section id="programs" class="programs">
+    <h2>Our Programs</h2>
+    <div class="program-container">
+      <div class="program">
+        <i class="fas fa-robot"></i>
+        <h3>Robotics</h3>
+        <p>Learn how to design, build, and program robots that solve real-world problems.</p>
+      </div>
+      <div class="program">
+        <i class="fas fa-code"></i>
+        <h3>Coding</h3>
+        <p>Master coding skills from web development to app creation.</p>
+      </div>
+      <div class="program">
+        <i class="fas fa-flask"></i>
+        <h3>Science Labs</h3>
+        <p>Experiment with hands-on science projects and explore innovations.</p>
+      </div>
+      <div class="program">
+        <i class="fas fa-users"></i>
+        <h3>Mentorship</h3>
+        <p>Get guidance from experienced STEM professionals and mentors.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Events Section -->
+  <section class="events">
+    <h2>Upcoming Events</h2>
+    <div class="event-container">
+      <div class="event">
+        <h3>Hackathon 2025</h3>
+        <p>Join our 48-hour coding competition to create solutions for real challenges.</p>
+        <span>Date: March 15, 2025</span>
+      </div>
+      <div class="event">
+        <h3>STEM Workshop</h3>
+        <p>Hands-on robotics and coding bootcamp for high school students.</p>
+        <span>Date: April 10, 2025</span>
+      </div>
+      <div class="event">
+        <h3>Science Fair</h3>
+        <p>Showcase your innovative projects and win exciting prizes.</p>
+        <span>Date: May 25, 2025</span>
+      </div>
+    </div>
+  </section>
+
+
+<!-- Call to Action -->
+<section class="cta">
+  <div class="cta-content">
+    <h2>Be Part of the Future</h2>
+    <p>Shape tomorrow with us — explore, learn, and grow in STEM today.</p>
+    <a href="contact.html" class="cta-btn">Join Now</a>
+  </div>
+
+  <div class="cta-image">
+    <img src="../assets/future.jpg" alt="Future">
+  </div>
+</section>
+
+
+
+
+   <!-- Footer -->
+<footer class="footer">
+  <div class="footer-container">
+    
+    <!-- Logo & About -->
+    <div class="footer-section about">
+      <div class="footer-logo">
+        <img src="../assets/logo (2).png" alt="STEM for Youths Logo">
+      </div>
+      <h3>STEM for Youths</h3>
+      <p>Empowering Cameroonian youths through innovation, creativity, and hands-on STEM programs. Together, we build tomorrow’s leaders.</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-section links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="Programs.html">Programs</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Social Media -->
+    <div class="footer-section socials">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bottom -->
+  <div class="footer-bottom">
+    <p>© 2025 STEM for Youths </p>
+  </div>
+</footer>
+
+  <!-- JavaScript -->
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const sidebar = document.querySelector('.sidebar');
+    const closeBtn = document.querySelector('.close-btn');
+
+    hamburger.addEventListener('click', () => {
+      sidebar.classList.add('active');
+    });
+
+    closeBtn.addEventListener('click', () => {
+      sidebar.classList.remove('active');
+    });
+  </script>
+</body>
+</html>
